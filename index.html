@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Главная страница</title>
+  </head>
+  <body>
+    <div>
+        <form id="sendForm">
+            Расстояние (км): <input type="text" name="distance"><br>
+            Время (в минутах): <input type="text" name="time"><br>
+            Тариф: <select name="rate">
+              <option value="basic">Базовый</option>
+              <option value="hourly">Почасовой</option>
+              <option value="student">Студенческий</option>
+            </select><br>
+            Дополнительные услуги:<br>
+            GPS: <input type="checkbox" name="gps"><br>
+            Дополнительный водитель: <input type="checkbox" name="driver"><br>
+            <input type="submit" value="Отправить"><br>
+            <input type="reset" value="Очистить">
+        </form>
+    </div>
+    <div id="result">
+    </div>
+    <script src="./js/vendors.min.js"></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script src="./js/main.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
